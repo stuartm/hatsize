@@ -1,8 +1,8 @@
-![headscale logo](./docs/logo/headscale3_header_stacked_left.png)
+# Hatsize
 
 ![ci](https://github.com/juanfont/headscale/actions/workflows/test.yml/badge.svg)
 
-An open source, self-hosted implementation of the Tailscale control server.
+An improved version of Headscale, an open source, self-hosted implementation of the Tailscale control server.
 
 Join our [Discord server](https://discord.gg/c84AZQhmpx) for a chat.
 
