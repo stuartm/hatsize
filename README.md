@@ -4,8 +4,6 @@
 
 An improved version of Headscale, an open source, self-hosted implementation of the Tailscale control server.
 
-Join our [Discord server](https://discord.gg/c84AZQhmpx) for a chat.
-
 **Note:** Always select the same GitHub tag as the released version you use
 to ensure you have the correct example configuration and documentation.
 The `main` branch might contain unreleased changes.
@@ -32,82 +30,37 @@ organisation.
 
 ## Design goal
 
-Headscale aims to implement a self-hosted, open source alternative to the Tailscale
-control server.
-Headscale's goal is to provide self-hosters and hobbyists with an open-source
-server they can use for their projects and labs.
-It implements a narrow scope, a single Tailnet, suitable for a personal use, or a small
-open-source organisation.
+Hatsize aims to implement a better self-hosted, open source alternative to the proprietary Tailscale control server than is currently available in Headscale.
 
-## Supporting Headscale
+## Supporting Hatsize
 
-If you like `headscale` and find it useful, there is a sponsorship and donation
-buttons available in the repo.
+In good time we'll provide information on how you can support our efforts, but for now, the greatest contribution you can make would be your ideas, your time and your code!
 
 ## Features
 
-Please see ["Features" in the documentation](https://headscale.net/stable/about/features/).
+For now see Headscale's feature page for an idea of where we're starting from. However please expect this list to grow beyond Headscale's narrow scope.
+
+["Features" in the Headscale documentation](https://headscale.net/stable/about/features/).
 
 ## Client OS support
 
-Please see ["Client and operating system support" in the documentation](https://headscale.net/stable/about/clients/).
+Coming soon.
 
 ## Running headscale
 
-**Please note that we do not support nor encourage the use of reverse proxies
-and container to run Headscale.**
+**Please note that we actively encourage you to deploy and use Headscale as you see fit, whether that be in a container or not! We obviously cannot provide individual support for every possible variation, but we will accept patches where necessary to support the environment of your chosing.**
 
-Please have a look at the [`documentation`](https://headscale.net/stable/).
-
-## Talks
-
-- Fosdem 2023 (video): [Headscale: How we are using integration testing to reimplement Tailscale](https://fosdem.org/2023/schedule/event/goheadscale/)
-  - presented by Juan Font Alonso and Kristoffer Dalby
+Documentation will be coming in the near future once we have a stable release.
 
 ## Disclaimer
 
-This project is not associated with Tailscale Inc.
+This project is not associated with Tailscale Inc or Headscale but is an independent effort using Headscale as a starting point.
 
-However, one of the active maintainers for Headscale [is employed by Tailscale](https://tailscale.com/blog/opensource) and he is allowed to spend work hours contributing to the project. Contributions from this maintainer are reviewed by other maintainers.
-
-The maintainers work together on setting the direction for the project. The underlying principle is to serve the community of self-hosters, enthusiasts and hobbyists - while having a sustainable project.
+The underlying principle is to serve the community by providing what they actually want from an open source, self-hosted Tailscale control server.
 
 ## Contributing
 
-Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
-
-### Requirements
-
-To contribute to headscale you would need the latest version of [Go](https://golang.org)
-and [Buf](https://buf.build) (Protobuf generator).
-
-We recommend using [Nix](https://nixos.org/) to setup a development environment. This can
-be done with `nix develop`, which will install the tools and give you a shell.
-This guarantees that you will have the same dev env as `headscale` maintainers.
-
-### Code style
-
-To ensure we have some consistency with a growing number of contributions,
-this project has adopted linting and style/formatting rules:
-
-The **Go** code is linted with [`golangci-lint`](https://golangci-lint.run) and
-formatted with [`golines`](https://github.com/segmentio/golines) (width 88) and
-[`gofumpt`](https://github.com/mvdan/gofumpt).
-Please configure your editor to run the tools while developing and make sure to
-run `make lint` and `make fmt` before committing any code.
-
-The **Proto** code is linted with [`buf`](https://docs.buf.build/lint/overview) and
-formatted with [`clang-format`](https://clang.llvm.org/docs/ClangFormat.html).
-
-The **rest** (Markdown, YAML, etc) is formatted with [`prettier`](https://prettier.io).
-
-Check out the `.golangci.yaml` and `Makefile` to see the specific configuration.
-
-### Install development tools
-
-- Go
-- Buf
-- Protobuf tools
+It's still very early days. Contributors are welcome but at this time no formal rules, coding standards etc have been developed. Watch this space!
 
 Install and activate:
 
@@ -146,8 +99,4 @@ make build
 
 ## Contributors
 
-<a href="https://github.com/juanfont/headscale/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=juanfont/headscale" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
+Hatsize is based upon Headscale.
