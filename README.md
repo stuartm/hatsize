@@ -4,10 +4,6 @@
 
 An improved version of Headscale, an open source, self-hosted implementation of the Tailscale control server.
 
-**Note:** Always select the same GitHub tag as the released version you use
-to ensure you have the correct example configuration and documentation.
-The `main` branch might contain unreleased changes.
-
 ## What is Tailscale
 
 Tailscale is [a modern VPN](https://tailscale.com/) built on top of
@@ -70,32 +66,7 @@ nix develop
 
 ### Testing and building
 
-Some parts of the project require the generation of Go code from Protobuf
-(if changes are made in `proto/`) and it must be (re-)generated with:
-
-```shell
-make generate
-```
-
-**Note**: Please check in changes from `gen/` in a separate commit to make it easier to review.
-
-To run the tests:
-
-```shell
-make test
-```
-
-To build the program:
-
-```shell
-nix build
-```
-
-or
-
-```shell
-make build
-```
+Coming soon once decisions about build environment are finalised.
 
 ## Contributors
 
